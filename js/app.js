@@ -9,21 +9,18 @@ fetch('https://retos-tecnicos-backend.lizzie136.now.sh/bands')
         const bands = Object.values(data);
         console.log(bands);
         bands.forEach(band => {
-            palceToRender1.insertAdjacentHTML('beforeend', `<tr><td>${band}</td></tr>`)
+            palceToRender1.insertAdjacentHTML('beforeend', `<tr><td>${band}</tr></td>`)
         })
         const ignoreArts = (bandName) => {
             return bandName.replace(/^(an?|the)\s/i, '');
         }
-        // const orderBandNames = (arr) => {
-        //     arr.sort((a, b) => {
-        //         return ignoreArts(a).localeCompare(ignoreArts(b));
-        //     })
-        //     arr.forEach(element => {
-        //         document.getElementById('band-name').insertAdjacentHTML('beforeend', `<tr><td>${element}</td></tr>`)
-        //     });
-            
-        // }
-        document.getElementById('button-order').addEventListener('click', orderBandNames());
+        bands.sort((a, b) => {
+            return ignoreArts(a).localeCompare(ignoreArts(b));
+        })
+        bands.forEach(element => {
+            document.getElementById('band-name').insertAdjacentHTML('beforeend', `<tr><td>${element}</tr></td>`)
+        });
+        return bands;
     })
     .catch(function (error) {
         if (error) {

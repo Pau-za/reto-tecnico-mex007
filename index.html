@@ -12,27 +12,54 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/materialize.min.css">
 </head>
 
 <body>
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+  <div class=" container">
     <h1>Lista de bandas ordenadas alfabéticamente</h1>
-    <p class="list">
+    <h4>Bienvenid@.</h4>
+    <p>A continuación te presento una tabla de nombres de bandas de rock y metal sin un orden en particular. Pero eso
+      puede cambiar, si das click en el botón, verás lo que pasa.</p>
+    <a id="button-order" class="waves-effect waves-light btn-large clo l12">Ordenar Nombres de Bandas</a>
+    <br>
+    <div class="row">
 
-    </p>
-    <table>
-      <tr>
-      <th>Banda</th>
-    </tr>
-    <tr>
-      <tbody id="band-name"></tbody>
-    </tr>
-    </table>
+      <div class="list-names ordered col l6 m6 s6">
+        <table class="centered responsive-table">
+          <thead>
+            <tr>
+              <th>Nombres sin ordenar</th>
+            </tr>
+          </thead>
 
-  <script src="./app.js" async defer></script>
+          <tbody id="list">
+
+          </tbody>
+        </table>
+      </div>
+
+      <div class="list-names col l6 m6 s6"  id="new-ordered">
+        <table class="centered responsive-table">
+          <thead>
+            <tr>
+              <th>Nombres ordenados</th>
+            </tr>
+          </thead>
+          <tbody id="band-name">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/app.js" async defer></script>
+  <script src="./js/materialize.min.js" async defer></script>
 </body>
 
 </html>
