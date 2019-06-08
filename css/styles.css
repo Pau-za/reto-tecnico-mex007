@@ -1,0 +1,9 @@
+*{
+    background-color: #F0A071;
+    color: #003136;
+    text-align: center;
+}
+
+#new-ordered{
+    display: none;
+}
