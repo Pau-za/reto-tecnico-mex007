@@ -1,9 +1,27 @@
 *{
-    background-color: #F0A071;
-    color: #003136;
+    background-color: #121212;
+    color: #ffffff;
     text-align: center;
+}
+
+
+tr,td{
+    /* background-color: #121212; */
+    border-bottom: 2px solid #BB86FC;
+}
+
+table{
+    margin-top: 5%;
+}
+
+.tables-place{
+    background-color: #1F1B24;
 }
 
 #new-ordered{
     display: none;
+}
+
+#nav-bckg{
+    background-color: #1F1B24;
 }

@@ -20,6 +20,14 @@
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper" id="nav-bckg">
+        <a href="#!" class="brand-logo mediaq">Reto Técnico</a>
+      </div>
+    </nav>
+  </div>
+
   <div class=" container">
     <h1>Orden alfabético sin contar artículos</h1>
     <h4>Bienvenid@.</h4>
@@ -27,10 +35,11 @@
       puede cambiar, si das click en el botón, verás lo que pasa.</p>
     <a id="button-order" class="waves-effect waves-light btn-large clo l12">Ordenar Nombres de Bandas</a>
     <br>
-    <div class="row">
 
-      <div class="list-names ordered col l6 m6 s4">
-        <table class="centered responsive-table">
+    <div class="row tables-place">
+
+      <div class="list-names ordered col l5 m5 s4">
+        <table class="centered responsive-table z-depth-4">
           <thead>
             <tr>
               <th>Nombres sin ordenar</th>
@@ -43,8 +52,10 @@
         </table>
       </div>
 
-      <div class="list-names col l6 m6 s4"  id="new-ordered">
-        <table class="centered responsive-table">
+      <div class="col l2 m2 s2"></div>
+
+      <div class="list-names col l5 m5 s4" id="new-ordered">
+        <table class="centered responsive-table z-depth-4">
           <thead>
             <tr>
               <th>Nombres ordenados</th>
