@@ -3,3 +3,7 @@
     color: #003136;
     text-align: center;
 }
+
+#new-ordered{
+    display: none;
+}
